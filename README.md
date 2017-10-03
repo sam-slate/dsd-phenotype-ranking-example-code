@@ -67,4 +67,5 @@ Implements a higher order function to be passed into a pool mapping function run
 # File structure
 
 Our file structure for storing leave-one-out cross validation data. Every protein associated with a phenotype has a collection of seed, test, and ranking files in which the protein is in the test file, the other proteins associated with the phenotype are in the seed file, and the outputted ranking from an algorithm is in the ranking file. All of our scripts run on top of this file structure.
+
 <img src="https://github.com/sam-slate/dsd-phenotype-ranking-example-code/blob/master/file_structure.png?raw=true" alt="File Structure" style="width:304px">
