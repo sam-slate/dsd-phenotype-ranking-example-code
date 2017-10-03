@@ -12,7 +12,7 @@ The Diffusion State Distance metric (DSD), introduced by Cao et al. in 2013, has
 A class that contains functions to calculate and print various performance metrics based on provided results
 ### Lower level description:
 A python class that has three basic functionalities:
-- **Reading in and storing data:**
+- **Read in and storing data:**
   - Parses and cleans data
   - Creates a data structure in the form of: 
   ```python
@@ -31,10 +31,22 @@ A python class that has three basic functionalities:
 - Data structures
 - Usage of advanced performance metrics
 
-## pool_with_closure.py
+## [pool_with_closure.py](https://github.com/sam-slate/dsd-phenotype-ranking-example-code/blob/master/pool_with_closure.py)
 ### Purpose:
-A script that runs another  multiprocessing script defined by a function and closure template on a given set of input using python's multiprocessing library
+A script that runs another multiprocessing script defined by a function and closure template on a given set of input using python's multiprocessing library
 ### Lower Level description:
+A script that runs a higher order function based on a template imported from another file. It runs this function on a given folder of data using the map function from python's pool processing library. It also imports a closure from the other file to use in the mapping function. There are three basic functionalities:
+- **Read input folders:**
+  - Retrieves input folders and prepares them for mapping
+- **Run serial processing:**
+  - Checks to see if user wishes to run serial processing, and if so, sets up and runs basic serial processing 
+  - Uses a python map function on the imported function, prepared input folders, and the imported closure
+  - Calculates the time taken to run serial processing
+- **Run pool processing:**
+  - Prepares arguments for pool mapping
+  - Sets the number of cores used in the pool processing
+  - Uses the python pool processing map function on the imported function, prepared input folders, and the imported closure
+  - Closes and joins the pool, and calculates the time taken to run pool processing
 
 ### Concepts used:
 - Multiprocessing
