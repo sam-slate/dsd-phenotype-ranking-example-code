@@ -12,7 +12,7 @@ The Diffusion State Distance metric (DSD), introduced by Cao et al. in 2013, has
 A class that contains functions to calculate and print various performance metrics based on provided results
 ### Lower level description:
 A python class that has three basic functionalities:
-- **Read in and storing data:**
+- **Read in and store data:**
   - Parses and cleans data
   - Creates a data structure in the form of: 
   ```python
