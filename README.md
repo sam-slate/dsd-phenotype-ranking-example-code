@@ -11,9 +11,23 @@ The Diffusion State Distance metric (DSD), introduced by Cao et al. in 2013, has
 ### Purpose:
 A class that contains functions to calculate and print various performance metrics based on provided results
 ### Lower level description:
+A python class that has three basic functionalities:
+- **Reading in and storing data:**
+  - Parses and cleans data
+  - Creates a data structure in the form of: 
+  ```python
+  {disease: {test_gene: {'perc': percentage out of 100, 'rank: rank, 'outof': ranked out of}, ... }, . . .} 
+  ```
+  - Sorts the data into the data structure
+- **Calculate performance metrics:**
+  - Implements basic metric calculations by looping through the above data structure and performing calculations
+  - Stores important information in the class to reuse for various metrics
+  - Implements AUC (Area Under the Curve) calculations for a specialized ROC (Receiver Operating Characteristic) using basic calulus formulas and modularity
+- **Print performance metrics:**
+  - Parses and prints the results from various metrics using string manipulation
 
 ### Concepts used:
-- Object oriented programming
+- Object oriented programming and modularity
 - Data structures
 - Usage of advanced performance metrics
 
