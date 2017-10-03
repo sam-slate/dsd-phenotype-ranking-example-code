@@ -1,3 +1,13 @@
+### performance.py
+#
+# Authors: Sam Slate and Yuelin Liu
+# Date: October 3rd, 2017
+# Function:
+#	A class that contains functions to
+#	calculate and print various performance 
+# 	metrics based on provided results
+#
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt

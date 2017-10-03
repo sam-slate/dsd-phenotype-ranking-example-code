@@ -1,3 +1,14 @@
+### mp_combine.py
+#
+# Authors: Sam Slate and Yuelin Liu
+# Date: October 3rd, 2017
+# Function:
+#	A script based on the multi-processing template that
+#	combines two rankings to produce a third based on 
+#	given biases and combination methods
+#
+#
+
 import os
 
 ## ** Add global variables here, they will be included ** ##
