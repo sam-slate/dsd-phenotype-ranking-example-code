@@ -7,7 +7,7 @@ The Diffusion State Distance metric (DSD), introduced by Cao et al. in 2013, has
 
 # Files
 
-## performance.py
+## [performance.py](https://github.com/sam-slate/dsd-phenotype-ranking-example-code/blob/master/performance.py)
 ### Purpose:
 A class that contains functions to calculate and print various performance metrics based on provided results
 ### Lower level description:
