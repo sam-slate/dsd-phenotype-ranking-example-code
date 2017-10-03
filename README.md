@@ -53,10 +53,11 @@ A script that runs a higher order function based on a template imported from ano
 - Object oriented programming
 - Higher order functions and closures
 
-## mp_combine.py
+## [mp_combine.py](https://github.com/sam-slate/dsd-phenotype-ranking-example-code/blob/master/mp_combine.py)
 ### Purpose: 
 A script based on the multi-processing template that combines two rankings to produce a third based on given biases and combination methods
 ### Lower level description:
+Implements a higher order function to be passed into a pool mapping function running on individual rankings. The function takes two rankings and weights them by multiplying each by a set weight. It then combines the two ranks using either addition or multiplcation (chosen by user) and creates a new rank, breaking ties with one of the two original rankings (also as chosen by user). 
 
 ### Concepts used:
 - Object oriented programming
