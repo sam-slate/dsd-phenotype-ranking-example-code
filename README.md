@@ -61,7 +61,7 @@ Implements a higher order function to be passed into a pool mapping function run
 
 ### Concepts used:
 - Object oriented programming
-- Higher order functions and 
+- Higher order functions 
 - Data manipulation
 
 # File structure
